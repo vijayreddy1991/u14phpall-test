@@ -1,0 +1,13 @@
+jobs:
+- name: php-test
+  type: runSh
+  steps:
+    - TASK:
+        runtime:
+          options:
+            imageName: "drydock/u14phpall"
+            imageTag: master
+        script:      
+         - ~/.phpenv/versions/5.6/bin/php -v
+         - ~/.phpenv/versions/7.0/bin/php -v
+         - ~/.phpenv/versions/7.1/bin/php -v
