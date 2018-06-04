@@ -3,6 +3,7 @@ jobs:
   type: runSh
   steps:
     - TASK:
+      - IN: u14all-testing
         runtime:
           options:
             imageName: "drydock/u14phpall"
